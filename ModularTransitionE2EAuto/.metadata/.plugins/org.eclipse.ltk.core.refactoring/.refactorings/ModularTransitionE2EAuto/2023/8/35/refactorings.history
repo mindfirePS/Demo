@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;selecYearDD&apos; in &apos;myar.pages.MyarAdministrationPage&apos; to &apos;selectYearDD&apos;&#x0D;&#x0A;- Original project: &apos;ModularTransitionE2EAuto&apos;&#x0D;&#x0A;- Original element: &apos;myar.pages.MyarAdministrationPage.selecYearDD&apos;&#x0D;&#x0A;- Renamed element: &apos;myar.pages.MyarAdministrationPage.selectYearDD&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;selecYearDD&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;myar.pages{MyarAdministrationPage.java[MyarAdministrationPage^selecYearDD" name="selectYearDD" references="true" setter="false" stamp="1693257072330" textual="false" version="1.0"/>
+</session>

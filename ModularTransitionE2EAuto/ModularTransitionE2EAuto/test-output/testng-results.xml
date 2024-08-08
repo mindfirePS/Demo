@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="16" total="17" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Suite Name: MyarRegression]]>
+    </line>
+    <line>
+      <![CDATA[browser: firefox]]>
+    </line>
+    <line>
+      <![CDATA[environment: myar_stagging]]>
+    </line>
+    <line>
+      <![CDATA[firefox   127.0.2]]>
+    </line>
+    <line>
+      <![CDATA[Cleared browser cookies]]>
+    </line>
+    <line>
+      <![CDATA[Login URL: https://staging.snoopstar.com]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on : Language selector drop-down]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : Language selector drop-down]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on : Language selector drop-down]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on : Language EN]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : Language EN]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on : Language EN]]>
+    </line>
+    <line>
+      <![CDATA[Sending Values in : Enter email address textbox]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : Enter email address textbox]]>
+    </line>
+    <line>
+      <![CDATA[Cleared : Enter email address textbox]]>
+    </line>
+    <line>
+      <![CDATA[Inputted 'client_automation@gmail.com' text into : Enter email address textbox]]>
+    </line>
+    <line>
+      <![CDATA[Sending Values in : Enter password textbox]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : Enter password textbox]]>
+    </line>
+    <line>
+      <![CDATA[Cleared : Enter password textbox]]>
+    </line>
+    <line>
+      <![CDATA[Inputted 'Mindfire1!' text into : Enter password textbox]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on : Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on : Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for application loader to disappear]]>
+    </line>
+    <line>
+      <![CDATA[loader is not present]]>
+    </line>
+    <line>
+      <![CDATA[loginAttempt: 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying whether Element : Enter email address textbox on login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Error while verifying - Enter email address textbox on login page element displayed : Unable to locate element: *[name='emailAddress']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6255e3d4-d6a9-4326-b5aa-a4c6d2d3196a, findElement {using=name, value=emailAddress}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0.2, moz:accessibilityChecks: false, moz:buildID: 20240624183754, moz:debuggerAddress: 127.0.0.1:45488, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9680, moz:profile: C:\Users\PRASEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45488/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6255e3d4-d6a9-4326-b5aa-a4c6d2d3196a]]>
+    </line>
+    <line>
+      <![CDATA[Logged In]]>
+    </line>
+    <line>
+      <![CDATA[Verifying whether Element : DASHBOARD modal is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on : MYAR user drop-down]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : MYAR user drop-down]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on : MYAR user drop-down]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on : Log out option]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for web element to load on the page : Log out option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on : Log out option]]>
+    </line>
+    <line>
+      <![CDATA[Logged Out]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: verifyLoginFunctionalityWithValidCredentials]]>
+    </line>
+    <line>
+      <![CDATA[Quitting browser]]>
+    </line>
+    <line>
+      <![CDATA[Clearing threadlocal]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-07-04T12:40:08 IST" name="Default suite" finished-at="2024-07-04T12:41:15 IST" duration-ms="67587">
+    <groups>
+    </groups>
+    <test started-at="2024-07-04T12:40:08 IST" name="Default test" finished-at="2024-07-04T12:41:15 IST" duration-ms="67587">
+      <class name="myar.testcases.MyarRegression">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:myar.testcases.MyarRegression@5b619d14]" started-at="2024-07-04T12:40:08 IST" name="intialize" finished-at="2024-07-04T12:40:31 IST" duration-ms="23048" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Suite Name: MyarRegression]]>
+            </line>
+            <line>
+              <![CDATA[browser: firefox]]>
+            </line>
+            <line>
+              <![CDATA[environment: myar_stagging]]>
+            </line>
+            <line>
+              <![CDATA[firefox   127.0.2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:myar.testcases.MyarRegression@5b619d14]" started-at="2024-07-04T12:40:31 IST" name="setup" finished-at="2024-07-04T12:40:31 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginFunctionalityWithValidCredentials()[pri:0, instance:myar.testcases.MyarRegression@5b619d14]" started-at="2024-07-04T12:40:31 IST" name="verifyLoginFunctionalityWithValidCredentials" finished-at="2024-07-04T12:41:13 IST" duration-ms="42359" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Cleared browser cookies]]>
+            </line>
+            <line>
+              <![CDATA[Login URL: https://staging.snoopstar.com]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on : Language selector drop-down]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : Language selector drop-down]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on : Language selector drop-down]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on : Language EN]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : Language EN]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on : Language EN]]>
+            </line>
+            <line>
+              <![CDATA[Sending Values in : Enter email address textbox]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : Enter email address textbox]]>
+            </line>
+            <line>
+              <![CDATA[Cleared : Enter email address textbox]]>
+            </line>
+            <line>
+              <![CDATA[Inputted 'client_automation@gmail.com' text into : Enter email address textbox]]>
+            </line>
+            <line>
+              <![CDATA[Sending Values in : Enter password textbox]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : Enter password textbox]]>
+            </line>
+            <line>
+              <![CDATA[Cleared : Enter password textbox]]>
+            </line>
+            <line>
+              <![CDATA[Inputted 'Mindfire1!' text into : Enter password textbox]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on : Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on : Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for application loader to disappear]]>
+            </line>
+            <line>
+              <![CDATA[loader is not present]]>
+            </line>
+            <line>
+              <![CDATA[loginAttempt: 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying whether Element : Enter email address textbox on login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Error while verifying - Enter email address textbox on login page element displayed : Unable to locate element: *[name='emailAddress']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6255e3d4-d6a9-4326-b5aa-a4c6d2d3196a, findElement {using=name, value=emailAddress}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0.2, moz:accessibilityChecks: false, moz:buildID: 20240624183754, moz:debuggerAddress: 127.0.0.1:45488, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9680, moz:profile: C:\Users\PRASEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45488/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6255e3d4-d6a9-4326-b5aa-a4c6d2d3196a]]>
+            </line>
+            <line>
+              <![CDATA[Logged In]]>
+            </line>
+            <line>
+              <![CDATA[Verifying whether Element : DASHBOARD modal is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on : MYAR user drop-down]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : MYAR user drop-down]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on : MYAR user drop-down]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on : Log out option]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for web element to load on the page : Log out option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on : Log out option]]>
+            </line>
+            <line>
+              <![CDATA[Logged Out]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionalityWithValidCredentials -->
+        <test-method is-config="true" signature="takeScreenshotInCaseOfFailure(org.testng.ITestResult)[pri:0, instance:myar.testcases.MyarRegression@5b619d14]" started-at="2024-07-04T12:41:13 IST" name="takeScreenshotInCaseOfFailure" finished-at="2024-07-04T12:41:13 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginFunctionalityWithValidCredentials status=SUCCESS method=MyarRegression.verifyLoginFunctionalityWithValidCredentials()[pri:0, instance:myar.testcases.MyarRegression@5b619d14] output=Cleared browser cookies]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TEST PASSED: verifyLoginFunctionalityWithValidCredentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotInCaseOfFailure -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:myar.testcases.MyarRegression@5b619d14]" started-at="2024-07-04T12:41:13 IST" name="cleanup" finished-at="2024-07-04T12:41:15 IST" duration-ms="2035" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Quitting browser]]>
+            </line>
+            <line>
+              <![CDATA[Clearing threadlocal]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- myar.testcases.MyarRegression -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
