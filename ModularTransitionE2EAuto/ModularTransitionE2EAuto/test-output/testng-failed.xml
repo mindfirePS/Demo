@@ -10,7 +10,7 @@
       <class name="myar.testcases.MyarRegression">
         <methods>
           <include name="intialize"/>
-          <include name="verify_different_URL_Ar_Actions_can_be_assigned_in_differnt_languages"/>
+          <include name="verifyLoginFunctionalityWithValidCredentials"/>
           <include name="cleanup"/>
           <include name="setup"/>
           <include name="takeScreenshotInCaseOfFailure"/>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Myar Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 12 22:57:39 IST 2023</td>
+<td>Started on:</td><td>Thu Aug 08 22:58:23 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>374 seconds (374651 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66567 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,19 +67,19 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='myar.testcases.MyarRegression.verify_different_URL_Ar_Actions_can_be_assigned_in_differnt_languages()'><b>verify_different_URL_Ar_Actions_can_be_assigned_in_differnt_languages</b><br>Test class: myar.testcases.MyarRegression<br>Test method: Issue with copy scene for another language<br/>
-<a href="#Output-2078927356" onClick='toggleBox("Output-2078927356", this, "Show output", "Hide output");'>Show output</a>
+<td title='myar.testcases.MyarRegression.verifyLoginFunctionalityWithValidCredentials()'><b>verifyLoginFunctionalityWithValidCredentials</b><br>Test class: myar.testcases.MyarRegression<br/>
+<a href="#Output-2022768790" onClick='toggleBox("Output-2022768790", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2078927356" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2078927356">
+<a href="#Output-2022768790" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2022768790">
 Cleared browser cookies<br/>
 Login URL: https://staging.snoopstar.com<br/>
 Clicking on : Language selector drop-down<br/>
@@ -91,11 +91,11 @@ Clicked on : Language EN<br/>
 Sending Values in : Enter email address textbox<br/>
 Waiting for web element to load on the page : Enter email address textbox<br/>
 Cleared : Enter email address textbox<br/>
-Inputted 'client_automation@gmail.com' text into : Enter email address textbox<br/>
+Inputted '' text into : Enter email address textbox<br/>
 Sending Values in : Enter password textbox<br/>
 Waiting for web element to load on the page : Enter password textbox<br/>
 Cleared : Enter password textbox<br/>
-Inputted 'Mindfire1!' text into : Enter password textbox<br/>
+Inputted '' text into : Enter password textbox<br/>
 Clicking on : Login Button<br/>
 Waiting for web element to load on the page : Login Button<br/>
 Clicked on : Login Button<br/>
@@ -115,11 +115,11 @@ Clicked on : Language EN<br/>
 Sending Values in : Enter email address textbox<br/>
 Waiting for web element to load on the page : Enter email address textbox<br/>
 Cleared : Enter email address textbox<br/>
-Inputted 'client_automation@gmail.com' text into : Enter email address textbox<br/>
+Inputted '' text into : Enter email address textbox<br/>
 Sending Values in : Enter password textbox<br/>
 Waiting for web element to load on the page : Enter password textbox<br/>
 Cleared : Enter password textbox<br/>
-Inputted 'Mindfire1!' text into : Enter password textbox<br/>
+Inputted '' text into : Enter password textbox<br/>
 Clicking on : Login Button<br/>
 Waiting for web element to load on the page : Login Button<br/>
 Clicked on : Login Button<br/>
@@ -127,306 +127,81 @@ Waiting for application loader to disappear<br/>
 loader is not present<br/>
 loginAttempt: 2<br/>
 Verifying whether Element : Enter email address textbox on login page is displayed<br/>
-Error while verifying - Enter email address textbox on login page element displayed : Unable to locate element: *[name='emailAddress']
+Login failed, attempting login again<br/>
+Cleared browser cookies<br/>
+Login URL: https://staging.snoopstar.com<br/>
+Clicking on : Language selector drop-down<br/>
+Waiting for web element to load on the page : Language selector drop-down<br/>
+Clicked on : Language selector drop-down<br/>
+Clicking on : Language EN<br/>
+Waiting for web element to load on the page : Language EN<br/>
+Clicked on : Language EN<br/>
+Sending Values in : Enter email address textbox<br/>
+Waiting for web element to load on the page : Enter email address textbox<br/>
+Cleared : Enter email address textbox<br/>
+Inputted '' text into : Enter email address textbox<br/>
+Sending Values in : Enter password textbox<br/>
+Waiting for web element to load on the page : Enter password textbox<br/>
+Cleared : Enter password textbox<br/>
+Inputted '' text into : Enter password textbox<br/>
+Clicking on : Login Button<br/>
+Waiting for web element to load on the page : Login Button<br/>
+Clicked on : Login Button<br/>
+Waiting for application loader to disappear<br/>
+loader is not present<br/>
+loginAttempt: 3<br/>
+Verifying whether Element : Enter email address textbox on login page is displayed<br/>
+Login Failed after 3 attempts<br/>
+Verifying whether Element : DASHBOARD modal is displayed<br/>
+Error while verifying - DASHBOARD modal element displayed : Unable to locate element: //a[contains(text(),'DASHBOARD')]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [dbab6e0c-c73b-4506-8c78-38f17b26dd46, findElement {using=name, value=emailAddress}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 117.0, moz:accessibilityChecks: false, moz:buildID: 20230824132758, moz:debuggerAddress: 127.0.0.1:2281, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18012, moz:profile: C:\Users\PRASEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:2281/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dbab6e0c-c73b-4506-8c78-38f17b26dd46<br/>
-Logged In<br/>
-Verifying whether Element : DASHBOARD modal is displayed<br/>
-Clicking on : START A NEW PRODUCT<br/>
-Waiting for web element to load on the page : START A NEW PRODUCT<br/>
-Clicked on : START A NEW PRODUCT<br/>
-Clicking on : Geo Product radio button<br/>
-Waiting for web element to load on the page : Geo Product radio button<br/>
-Clicked on : Geo Product radio button<br/>
-Clicking on : CONFIRM button<br/>
-Waiting for web element to load on the page : CONFIRM button<br/>
-Clicked on : CONFIRM button<br/>
-Sending Values in : Enter Product name textbox<br/>
-Waiting for web element to load on the page : Enter Product name textbox<br/>
-Cleared : Enter Product name textbox<br/>
-Inputted 'P_TC1_MYAR_1862_Geo' text into : Enter Product name textbox<br/>
-Selecting 'Brochures' from : Product type<br/>
-Waiting for web element to load on the page : Product type<br/>
-Selected 'Brochures' from : Product type<br/>
-Clicking on : LOAD GEO SETUP<br/>
-Waiting for web element to load on the page : LOAD GEO SETUP<br/>
-Clicked on : LOAD GEO SETUP<br/>
-Clicking on : Check-box of Kolkata<br/>
-Waiting for web element to load on the page : Check-box of Kolkata<br/>
-Clicked on : Check-box of Kolkata<br/>
-Clicking on : LOAD SELECTED button<br/>
-Waiting for web element to load on the page : LOAD SELECTED button<br/>
-Clicked on : LOAD SELECTED button<br/>
-Clicking on : SAVE AND OPEN IN EDITOR button<br/>
-Waiting for web element to load on the page : SAVE AND OPEN IN EDITOR button<br/>
-Clicked on : SAVE AND OPEN IN EDITOR button<br/>
-Waiting for web element to load on the page : TARGET tab<br/>
-Verifying whether Element : TARGET tab is displayed<br/>
-Waiting for web element to load on the page : Current Product name<br/>
-Retrieving Text from : Current Product name<br/>
-Waiting for web element to load on the page : Current Product name<br/>
-Retrieved text : P_TC1_MYAR_1862_Geo<br/>
-Clicking on : + ADD TARGET<br/>
-Waiting for web element to load on the page : + ADD TARGET<br/>
-Clicked on : + ADD TARGET<br/>
-Clicking on : Select folder icon of Target image<br/>
-Waiting for web element to load on the page : Select folder icon of Target image<br/>
-Clicked on : Select folder icon of Target image<br/>
-Sending Values in : Search box<br/>
-Waiting for web element to load on the page : Search box<br/>
-Cleared : Search box<br/>
-Inputted 'AudiSedan.jpeg' text into : Search box<br/>
-Pressing Enter<br/>
-Enter Pressed<br/>
-Clicking on : Searched Image<br/>
-Waiting for web element to load on the page : Searched Image<br/>
-Clicked on : Searched Image<br/>
-Clicking on : SELECT button<br/>
-Waiting for web element to load on the page : SELECT button<br/>
-Clicked on : SELECT button<br/>
-Clicking on CANCEL button<br/>
-Clicked on CANCEL button<br/>
-Clicking on SAVE CHANGES button of ADD TARGET<br/>
-Clicked on SAVE CHANGES button of ADD TARGET<br/>
-Waiting for web element to be clickable : Target Delete button<br/>
-Clicking on : Product Language<br/>
-Waiting for web element to load on the page : Product Language<br/>
-Clicked on : Product Language<br/>
-Clicking on : EN<br/>
-Waiting for web element to load on the page : EN<br/>
-Clicked on : EN<br/>
-Clicking on : SCENES tab<br/>
-Waiting for web element to load on the page : SCENES tab<br/>
-Clicked on : SCENES tab<br/>
-Clicking on : NEW SCENE button<br/>
-Waiting for web element to load on the page : NEW SCENE button<br/>
-Clicked on : NEW SCENE button<br/>
-Sending Values in : Enter scene name text box<br/>
-Waiting for web element to load on the page : Enter scene name text box<br/>
-Cleared : Enter scene name text box<br/>
-Inputted 'MYAR_1862_sc_EN' text into : Enter scene name text box<br/>
-Clicking on : SAVE button of ADD SCENE modal<br/>
-Waiting for web element to load on the page : SAVE button of ADD SCENE modal<br/>
-Clicked on : SAVE button of ADD SCENE modal<br/>
-Retrieving Text from : Scene name<br/>
-Waiting for web element to load on the page : Scene name<br/>
-Retrieved text : MYAR_1862_sc_EN<br/>
-Clicking on : Add elements<br/>
-Waiting for web element to load on the page : Add elements<br/>
-Clicked on : Add elements<br/>
-Clicking on : ADD BUTTON<br/>
-Waiting for web element to load on the page : ADD BUTTON<br/>
-Clicked on : ADD BUTTON<br/>
-Waiting for web element to be clickable : Enter button name textbox<br/>
-Sending Values in : Enter button name textbox<br/>
-Waiting for web element to load on the page : Enter button name textbox<br/>
-Cleared : Enter button name textbox<br/>
-Inputted 'ButtonOfMyar1862' text into : Enter button name textbox<br/>
-Clicking on : BUTTON TEXT<br/>
-Waiting for web element to load on the page : BUTTON TEXT<br/>
-Clicked on : BUTTON TEXT<br/>
-Retrieving Text from : Web-text title<br/>
-Waiting for web element to load on the page : Web-text title<br/>
-Retrieved text : Success<br/>
-Retrieving Text from : Web-text Content<br/>
-Waiting for web element to load on the page : Web-text Content<br/>
-Retrieved text : Button details saved successfully.<br/>
-Selecting value from : Choose AR action<br/>
-Waiting for web element to load on the page : Choose AR action<br/>
-Selected  from : Choose AR action<br/>
-Selecting value from : Select AR action<br/>
-Waiting for web element to load on the page : Select AR action<br/>
-Selected  from : Select AR action<br/>
-Sending Values in : URL input textbox<br/>
-Waiting for web element to load on the page : URL input textbox<br/>
-Cleared : URL input textbox<br/>
-Inputted 'https://snoopstar.com' text into : URL input textbox<br/>
-Clicking on : url text<br/>
-Waiting for web element to load on the page : url text<br/>
-Clicked on : url text<br/>
-Clicking on : SCENES tab<br/>
-Waiting for web element to load on the page : SCENES tab<br/>
-Clicked on : SCENES tab<br/>
-Clicking on : Copy scene action<br/>
-Waiting for web element to load on the page : Copy scene action<br/>
-Clicked on : Copy scene action<br/>
-Sending Values in : Name textbox of COPY SCENE modal<br/>
-Waiting for web element to load on the page : Name textbox of COPY SCENE modal<br/>
-Cleared : Name textbox of COPY SCENE modal<br/>
-Inputted 'MYAR_1862_sc_EN_Copy' text into : Name textbox of COPY SCENE modal<br/>
-Clicking on : COPY button of COPY SCENE modal<br/>
-Waiting for web element to load on the page : COPY button of COPY SCENE modal<br/>
-Clicked on : COPY button of COPY SCENE modal<br/>
-Clicking on : Product Language<br/>
-Waiting for web element to load on the page : Product Language<br/>
-Clicked on : Product Language<br/>
-Clicking on : DE<br/>
-Waiting for web element to load on the page : DE<br/>
-Clicked on : DE<br/>
-Clicking on : SCENES tab<br/>
-Waiting for web element to load on the page : SCENES tab<br/>
-Clicked on : SCENES tab<br/>
-Clicking on : SELECT SCENE button<br/>
-Waiting for web element to load on the page : SELECT SCENE button<br/>
-Clicked on : SELECT SCENE button<br/>
-Sending Values in : Search scene textbox<br/>
-Waiting for web element to load on the page : Search scene textbox<br/>
-Cleared : Search scene textbox<br/>
-Inputted 'MYAR_1862_sc_EN_Copy' text into : Search scene textbox<br/>
-Pressing Enter<br/>
-Enter Pressed<br/>
-Clicking on : ADD TO CURRENT PRODUCT<br/>
-Waiting for web element to load on the page : ADD TO CURRENT PRODUCT<br/>
-Clicked on : ADD TO CURRENT PRODUCT<br/>
-Clicking on : YES button of CONFIRMATION modal<br/>
-Waiting for web element to load on the page : YES button of CONFIRMATION modal<br/>
-Clicked on : YES button of CONFIRMATION modal<br/>
-Clicking on : close X button of Scene Library<br/>
-Waiting for web element to load on the page : close X button of Scene Library<br/>
-Clicked on : close X button of Scene Library<br/>
-Retrieving Text from : Scene name<br/>
-Waiting for web element to load on the page : Scene name<br/>
-Retrieved text : MYAR_1862_sc_EN_Copy<br/>
-Clicking on : ELEMENTS tabs<br/>
-Waiting for web element to load on the page : ELEMENTS tabs<br/>
-Clicked on : ELEMENTS tabs<br/>
-Retrieving Text from : Element Name<br/>
-Waiting for web element to load on the page : Element Name<br/>
-Retrieved text : (ButtonOfMyar1862)<br/>
-Clicking on : Edit button of (ButtonOfMyar1862)<br/>
-Waiting for web element to load on the page : Edit button of (ButtonOfMyar1862)<br/>
-Clicked on : Edit button of (ButtonOfMyar1862)<br/>
-Clearing field : URL input textbox<br/>
-Waiting for web element to load on the page : URL input textbox<br/>
-Cleared : URL input textbox<br/>
-Sending Values in : URL input textbox<br/>
-Waiting for web element to load on the page : URL input textbox<br/>
-Cleared : URL input textbox<br/>
-Inputted 'https://lsd.de' text into : URL input textbox<br/>
-Clicking on : url text<br/>
-Waiting for web element to load on the page : url text<br/>
-Clicked on : url text<br/>
-Clicking on : Product Language<br/>
-Waiting for web element to load on the page : Product Language<br/>
-Clicked on : Product Language<br/>
-Clicking on : EN<br/>
-Waiting for web element to load on the page : EN<br/>
-Clicked on : EN<br/>
-Clicking on : ButtonOfMyar1862<br/>
-Waiting for web element to load on the page : ButtonOfMyar1862<br/>
-Clicked on : ButtonOfMyar1862<br/>
-Copying data from field : URL input textbox<br/>
-Waiting for web element to load on the page : URL input textbox<br/>
-Copied data from : URL input textbox<br/>
-Clicking on : Add elements<br/>
-Waiting for web element to load on the page : Add elements<br/>
-Clicked on : Add elements<br/>
-Clicking on : ADD BUTTON<br/>
-Waiting for web element to load on the page : ADD BUTTON<br/>
-Clicked on : ADD BUTTON<br/>
-Pasting data to field : Enter button name textbox<br/>
-Waiting for web element to load on the page : Enter button name textbox<br/>
-Pasted data to : Enter button name textbox<br/>
-Clicking on : BUTTON TEXT<br/>
-Waiting for web element to load on the page : BUTTON TEXT<br/>
-Clicked on : BUTTON TEXT<br/>
-Retrieving Text from : Web-text title<br/>
-Waiting for web element to load on the page : Web-text title<br/>
-Retrieved text : Success<br/>
-Retrieving Text from : Web-text Content<br/>
-Waiting for web element to load on the page : Web-text Content<br/>
-Retrieved text : Button details saved successfully.<br/>
-Retrieving Text from : https://snoopstar.com<br/>
-Waiting for web element to load on the page : https://snoopstar.com<br/>
-Retrieved text : https://snoopstar.com<br/>
-Clicking on : Product Language<br/>
-Waiting for web element to load on the page : Product Language<br/>
-Clicked on : Product Language<br/>
-Clicking on : DE<br/>
-Waiting for web element to load on the page : DE<br/>
-Clicked on : DE<br/>
-Clicking on : ButtonOfMyar1862<br/>
-Waiting for web element to load on the page : ButtonOfMyar1862<br/>
-Clicked on : ButtonOfMyar1862<br/>
-Copying data from field : URL input textbox<br/>
-Waiting for web element to load on the page : URL input textbox<br/>
-Copied data from : URL input textbox<br/>
-Clicking on : Add elements<br/>
-Waiting for web element to load on the page : Add elements<br/>
-Clicked on : Add elements<br/>
-Clicking on : ADD BUTTON<br/>
-Waiting for web element to load on the page : ADD BUTTON<br/>
-Clicked on : ADD BUTTON<br/>
-Pasting data to field : Enter button name textbox<br/>
-Waiting for web element to load on the page : Enter button name textbox<br/>
-Pasted data to : Enter button name textbox<br/>
-Clicking on : BUTTON TEXT<br/>
-Waiting for web element to load on the page : BUTTON TEXT<br/>
-Clicked on : BUTTON TEXT<br/>
-Retrieving Text from : Web-text title<br/>
-Waiting for web element to load on the page : Web-text title<br/>
-Retrieved text : Success<br/>
-Retrieving Text from : Web-text Content<br/>
-Waiting for web element to load on the page : Web-text Content<br/>
-Retrieved text : Button details saved successfully.<br/>
-Retrieving Text from : https://lsd.de<br/>
-Waiting for web element to load on the page : https://lsd.de<br/>
-Retrieved text : https://lsd.de<br/>
-Clicking on : PRODUCTS modal<br/>
-Waiting for web element to load on the page : PRODUCTS modal<br/>
-Clicked on : PRODUCTS modal<br/>
-Sending Values in : Search Product textbox<br/>
-Waiting for web element to load on the page : Search Product textbox<br/>
-Cleared : Search Product textbox<br/>
-Inputted 'P_TC1_MYAR_1862_Geo' text into : Search Product textbox<br/>
-Retrieving Text from : Product Name<br/>
-Waiting for web element to load on the page : Product Name<br/>
-Retrieved text : P_TC1_MYAR_1862_Geo<br/>
-Clicking on : Delete<br/>
-Waiting for web element to load on the page : Delete<br/>
-Clicked on : Delete<br/>
-Clicking on : Confirm Delete<br/>
-Waiting for web element to load on the page : Confirm Delete<br/>
-Clicked on : Confirm Delete<br/>
-Verifying whether Element : NO DATA AVAILABLE is displayed<br/>
-Clicking on : Close X icon of Products modal<br/>
-Waiting for web element to load on the page : Close X icon of Products modal<br/>
-Clicked on : Close X icon of Products modal<br/>
-Clicking on : SCENES modal<br/>
-Waiting for web element to load on the page : SCENES modal<br/>
-Clicked on : SCENES modal<br/>
-Clicking on : select all listed scenes check-box<br/>
-Waiting for web element to load on the page : select all listed scenes check-box<br/>
-Clicked on : select all listed scenes check-box<br/>
-Clicking on : delete all checked scene trash icon<br/>
-Waiting for web element to load on the page : delete all checked scene trash icon<br/>
-Clicked on : delete all checked scene trash icon<br/>
-Retrieving Text from : Web-text title<br/>
-Waiting for web element to load on the page : Web-text title<br/>
-Retrieved text : Success<br/>
-Retrieving Text from : Web-text Content<br/>
-Waiting for web element to load on the page : Web-text Content<br/>
-Retrieved text : Scenes deleted successfully.<br/>
-Verifying whether Element : NO DATA AVAILABLE is displayed<br/>
-Clicking on : close X button of Scene Library<br/>
-Waiting for web element to load on the page : close X button of Scene Library<br/>
-Clicked on : close X button of Scene Library<br/>
-Clicking on : MYAR user drop-down<br/>
-Waiting for web element to load on the page : MYAR user drop-down<br/>
-Clicked on : MYAR user drop-down<br/>
-Clicking on : Log out option<br/>
-Waiting for web element to load on the page : Log out option<br/>
-Clicked on : Log out option<br/>
-Logged Out<br/>
+Command: [dceaa5e9-e1e7-4f07-bcd5-f6661d4d19fb, findElement {using=xpath, value=//a[contains(text(),'DASHBOARD')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 128.0.3, moz:accessibilityChecks: false, moz:buildID: 20240725162350, moz:debuggerAddress: 127.0.0.1:30482, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25100, moz:profile: C:\Users\PRASEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:30482/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: dceaa5e9-e1e7-4f07-bcd5-f6661d4d19fb<br/>
 </div>
 </td>
-<td></td>
-<td>365</td>
+<td><div><pre>java.lang.AssertionError: MYAR Dashboard presence expected [true] but found [false]
+	at myar.testcases.MyarRegression.verifyLoginFunctionalityWithValidCredentials(MyarRegression.java:235)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2022768790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2022768790'><pre>java.lang.AssertionError: MYAR Dashboard presence expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at myar.testcases.MyarRegression.verifyLoginFunctionalityWithValidCredentials(MyarRegression.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>56</td>
 <td>myar.testcases.MyarRegression@6d23017e</td></tr>
 </table><p>
 </body>

@@ -6,14 +6,9 @@
       <class name="myar.testcases.MyarRegression">
         <methods>
           <include name="intialize"/>
-          <include name="verifyOnExcelImportClickingProductIdAtImportStatusOpensImportedProductInEditor"/>
-          <include name="verifyAddingNewUserAdminUserFunctionality"/>
-          <include name="verifyAddingNewSubgroupAdminUserFunctionality"/>
-          <include name="verifyStandardProductCreationUsingProductNameThroughExcelImport"/>
-          <include name="verifyScenesMappingWithScenesInExcel"/>
+          <include name="verifyLoginFunctionalityWithValidCredentials"/>
           <include name="cleanup"/>
           <include name="setup"/>
-          <include name="verifyGeoMappingsNotVisibleInCHOOSE_MAPPING_SectionImportingStandardProduct"/>
           <include name="takeScreenshotInCaseOfFailure"/>
         </methods>
       </class> <!-- myar.testcases.MyarRegression -->
