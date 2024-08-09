@@ -1,91 +1,59 @@
-08-08-2024 22:58:23 TestBase.java [INFO ] - Test Suite Name: MyarRegression
-08-08-2024 22:58:23 TestBase.java [INFO ] - browser: firefox
-08-08-2024 22:58:23 TestBase.java [INFO ] - environment: myar_stagging
-08-08-2024 22:58:31 TestBase.java [INFO ] - firefox   128.0.3
-08-08-2024 22:58:31 TestBase.java [INFO ] - Cleared browser cookies
-08-08-2024 22:58:31 TestBase.java [INFO ] - Login URL: https://staging.snoopstar.com
-08-08-2024 22:58:38 TestBase.java [INFO ] - Clicking on : Language selector drop-down
-08-08-2024 22:58:38 TestBase.java [INFO ] - Waiting for web element to load on the page : Language selector drop-down
-08-08-2024 22:58:40 TestBase.java [INFO ] - Clicked on : Language selector drop-down
-08-08-2024 22:58:40 TestBase.java [INFO ] - Clicking on : Language EN
-08-08-2024 22:58:40 TestBase.java [INFO ] - Waiting for web element to load on the page : Language EN
-08-08-2024 22:58:41 TestBase.java [INFO ] - Clicked on : Language EN
-08-08-2024 22:58:41 TestBase.java [INFO ] - Sending Values in : Enter email address textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter email address textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Cleared : Enter email address textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Inputted '' text into : Enter email address textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Sending Values in : Enter password textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter password textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Cleared : Enter password textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Inputted '' text into : Enter password textbox
-08-08-2024 22:58:41 TestBase.java [INFO ] - Clicking on : Login Button
-08-08-2024 22:58:41 TestBase.java [INFO ] - Waiting for web element to load on the page : Login Button
-08-08-2024 22:58:41 TestBase.java [INFO ] - Clicked on : Login Button
-08-08-2024 22:58:42 TestBase.java [INFO ] - Waiting for application loader to disappear
-08-08-2024 22:58:47 TestBase.java [INFO ] - loader is not present
-08-08-2024 22:58:47 TestBase.java [INFO ] - loginAttempt: 1
-08-08-2024 22:58:47 TestBase.java [INFO ] - Verifying whether Element : Enter email address textbox on login page is displayed
-08-08-2024 22:58:48 TestBase.java [INFO ] - Login failed, attempting login again
-08-08-2024 22:58:48 TestBase.java [INFO ] - Cleared browser cookies
-08-08-2024 22:58:48 TestBase.java [INFO ] - Login URL: https://staging.snoopstar.com
-08-08-2024 22:58:48 TestBase.java [INFO ] - Clicking on : Language selector drop-down
-08-08-2024 22:58:48 TestBase.java [INFO ] - Waiting for web element to load on the page : Language selector drop-down
-08-08-2024 22:58:50 TestBase.java [INFO ] - Clicked on : Language selector drop-down
-08-08-2024 22:58:50 TestBase.java [INFO ] - Clicking on : Language EN
-08-08-2024 22:58:50 TestBase.java [INFO ] - Waiting for web element to load on the page : Language EN
-08-08-2024 22:58:51 TestBase.java [INFO ] - Clicked on : Language EN
-08-08-2024 22:58:51 TestBase.java [INFO ] - Sending Values in : Enter email address textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter email address textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Cleared : Enter email address textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Inputted '' text into : Enter email address textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Sending Values in : Enter password textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter password textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Cleared : Enter password textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Inputted '' text into : Enter password textbox
-08-08-2024 22:58:51 TestBase.java [INFO ] - Clicking on : Login Button
-08-08-2024 22:58:51 TestBase.java [INFO ] - Waiting for web element to load on the page : Login Button
-08-08-2024 22:58:51 TestBase.java [INFO ] - Clicked on : Login Button
-08-08-2024 22:58:52 TestBase.java [INFO ] - Waiting for application loader to disappear
-08-08-2024 22:58:57 TestBase.java [INFO ] - loader is not present
-08-08-2024 22:58:57 TestBase.java [INFO ] - loginAttempt: 2
-08-08-2024 22:58:57 TestBase.java [INFO ] - Verifying whether Element : Enter email address textbox on login page is displayed
-08-08-2024 22:58:57 TestBase.java [INFO ] - Login failed, attempting login again
-08-08-2024 22:58:57 TestBase.java [INFO ] - Cleared browser cookies
-08-08-2024 22:58:57 TestBase.java [INFO ] - Login URL: https://staging.snoopstar.com
-08-08-2024 22:58:58 TestBase.java [INFO ] - Clicking on : Language selector drop-down
-08-08-2024 22:58:58 TestBase.java [INFO ] - Waiting for web element to load on the page : Language selector drop-down
-08-08-2024 22:59:00 TestBase.java [INFO ] - Clicked on : Language selector drop-down
-08-08-2024 22:59:00 TestBase.java [INFO ] - Clicking on : Language EN
-08-08-2024 22:59:00 TestBase.java [INFO ] - Waiting for web element to load on the page : Language EN
-08-08-2024 22:59:01 TestBase.java [INFO ] - Clicked on : Language EN
-08-08-2024 22:59:01 TestBase.java [INFO ] - Sending Values in : Enter email address textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter email address textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Cleared : Enter email address textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Inputted '' text into : Enter email address textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Sending Values in : Enter password textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter password textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Cleared : Enter password textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Inputted '' text into : Enter password textbox
-08-08-2024 22:59:01 TestBase.java [INFO ] - Clicking on : Login Button
-08-08-2024 22:59:01 TestBase.java [INFO ] - Waiting for web element to load on the page : Login Button
-08-08-2024 22:59:02 TestBase.java [INFO ] - Clicked on : Login Button
-08-08-2024 22:59:03 TestBase.java [INFO ] - Waiting for application loader to disappear
-08-08-2024 22:59:08 TestBase.java [INFO ] - loader is not present
-08-08-2024 22:59:08 TestBase.java [INFO ] - loginAttempt: 3
-08-08-2024 22:59:08 TestBase.java [INFO ] - Verifying whether Element : Enter email address textbox on login page is displayed
-08-08-2024 22:59:08 TestBase.java [INFO ] - Login Failed after 3 attempts
-08-08-2024 22:59:08 TestBase.java [INFO ] - Verifying whether Element : DASHBOARD modal is displayed
-08-08-2024 22:59:28 TestBase.java [INFO ] - Error while verifying - DASHBOARD modal element displayed : Unable to locate element: //a[contains(text(),'DASHBOARD')]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [dceaa5e9-e1e7-4f07-bcd5-f6661d4d19fb, findElement {using=xpath, value=//a[contains(text(),'DASHBOARD')]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 128.0.3, moz:accessibilityChecks: false, moz:buildID: 20240725162350, moz:debuggerAddress: 127.0.0.1:30482, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25100, moz:profile: C:\Users\PRASEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:30482/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: dceaa5e9-e1e7-4f07-bcd5-f6661d4d19fb
-08-08-2024 22:59:28 TestBase.java [INFO ] - TEST FAILED: verifyLoginFunctionalityWithValidCredentials
-08-08-2024 22:59:28 TestBase.java [INFO ] - Capturing Screenshot
-08-08-2024 22:59:28 TestBase.java [INFO ] - BUILD NUMBER in screenshot method: null
-08-08-2024 22:59:28 TestBase.java [INFO ] - SCREENSHOT LOCATION: E:\DemoJavaSeleniumProject\Demo\ModularTransitionE2EAuto\ModularTransitionE2EAuto\test-output\TestResults\Report_08_Aug_2024_22_58_31\verifyLoginFunctionalityWithValidCredentials20240808105928.png
-08-08-2024 22:59:28 TestBase.java [INFO ] - Quitting browser
-08-08-2024 22:59:30 TestBase.java [INFO ] - Clearing threadlocal
+08-09-2024 16:07:33 TestBase.java [INFO ] - Test Suite Name: MyarRegression
+08-09-2024 16:07:33 TestBase.java [INFO ] - browser: firefox
+08-09-2024 16:07:33 TestBase.java [INFO ] - environment: myar_stagging
+08-09-2024 16:07:43 TestBase.java [INFO ] - firefox   124.0.2
+08-09-2024 16:07:43 TestBase.java [INFO ] - Cleared browser cookies
+08-09-2024 16:07:43 TestBase.java [INFO ] - Login URL: https://staging.snoopstar.com
+08-09-2024 16:07:49 TestBase.java [INFO ] - Clicking on : Language selector drop-down
+08-09-2024 16:07:49 TestBase.java [INFO ] - Waiting for web element to load on the page : Language selector drop-down
+08-09-2024 16:07:51 TestBase.java [INFO ] - Clicked on : Language selector drop-down
+08-09-2024 16:07:51 TestBase.java [INFO ] - Clicking on : Language EN
+08-09-2024 16:07:51 TestBase.java [INFO ] - Waiting for web element to load on the page : Language EN
+08-09-2024 16:07:51 TestBase.java [INFO ] - Clicked on : Language EN
+08-09-2024 16:07:51 TestBase.java [INFO ] - Sending Values in : Enter email address textbox
+08-09-2024 16:07:51 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter email address textbox
+08-09-2024 16:07:51 TestBase.java [INFO ] - Cleared : Enter email address textbox
+08-09-2024 16:07:51 TestBase.java [INFO ] - Inputted '' text into : Enter email address textbox
+08-09-2024 16:07:51 TestBase.java [INFO ] - Sending Values in : Enter password textbox
+08-09-2024 16:07:51 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter password textbox
+08-09-2024 16:07:52 TestBase.java [INFO ] - Cleared : Enter password textbox
+08-09-2024 16:07:52 TestBase.java [INFO ] - Inputted '' text into : Enter password textbox
+08-09-2024 16:07:52 TestBase.java [INFO ] - Clicking on : Login Button
+08-09-2024 16:07:52 TestBase.java [INFO ] - Waiting for web element to load on the page : Login Button
+08-09-2024 16:07:52 TestBase.java [INFO ] - Clicked on : Login Button
+08-09-2024 16:07:53 TestBase.java [INFO ] - Waiting for application loader to disappear
+08-09-2024 16:07:58 TestBase.java [INFO ] - loader is not present
+08-09-2024 16:07:58 TestBase.java [INFO ] - loginAttempt: 1
+08-09-2024 16:07:58 TestBase.java [INFO ] - Verifying whether Element : Enter email address textbox on login page is displayed
+08-09-2024 16:07:58 TestBase.java [INFO ] - Login failed, attempting login again
+08-09-2024 16:07:58 TestBase.java [INFO ] - Cleared browser cookies
+08-09-2024 16:07:58 TestBase.java [INFO ] - Login URL: https://staging.snoopstar.com
+08-09-2024 16:07:59 TestBase.java [INFO ] - Clicking on : Language selector drop-down
+08-09-2024 16:07:59 TestBase.java [INFO ] - Waiting for web element to load on the page : Language selector drop-down
+08-09-2024 16:08:02 TestBase.java [INFO ] - Clicked on : Language selector drop-down
+08-09-2024 16:08:02 TestBase.java [INFO ] - Clicking on : Language EN
+08-09-2024 16:08:02 TestBase.java [INFO ] - Waiting for web element to load on the page : Language EN
+08-09-2024 16:08:02 TestBase.java [INFO ] - Clicked on : Language EN
+08-09-2024 16:08:02 TestBase.java [INFO ] - Sending Values in : Enter email address textbox
+08-09-2024 16:08:02 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter email address textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Cleared : Enter email address textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Inputted '' text into : Enter email address textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Sending Values in : Enter password textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Waiting for web element to load on the page : Enter password textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Cleared : Enter password textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Inputted '' text into : Enter password textbox
+08-09-2024 16:08:03 TestBase.java [INFO ] - Clicking on : Login Button
+08-09-2024 16:08:03 TestBase.java [INFO ] - Waiting for web element to load on the page : Login Button
+08-09-2024 16:08:03 TestBase.java [INFO ] - Clicked on : Login Button
+08-09-2024 16:08:04 TestBase.java [INFO ] - Waiting for application loader to disappear
+08-09-2024 16:08:09 TestBase.java [INFO ] - loader is not present
+08-09-2024 16:08:09 TestBase.java [INFO ] - loginAttempt: 2
+08-09-2024 16:08:09 TestBase.java [INFO ] - Verifying whether Element : Enter email address textbox on login page is displayed
+08-09-2024 16:08:09 TestBase.java [INFO ] - Login failed, attempting login again
+08-09-2024 16:08:09 TestBase.java [INFO ] - Cleared browser cookies
+08-09-2024 16:08:09 TestBase.java [INFO ] - Login URL: https://staging.snoopstar.com
+08-09-2024 16:08:09 TestBase.java [INFO ] - Clicking on : Language selector drop-down
+08-09-2024 16:08:09 TestBase.java [INFO ] - Waiting for web element to load on the page : Language selector drop-down
+08-09-2024 16:08:12 TestBase.java [INFO ] - TEST FAILED: verifyLoginFunctionalityWithValidCredentials
+08-09-2024 16:08:12 TestBase.java [INFO ] - Capturing Screenshot
+08-09-2024 16:08:13 TestBase.java [INFO ] - Quitting browser

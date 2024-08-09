@@ -47,7 +47,7 @@ import myar.pages.MyarUploadExcelPage;
 
 public class MyarRegression extends TestBase {
 	// Declare all pages to be used
-	MyarLoginPage myarLoginPageObj;
+	MyarLoginPage myarLoginPageObj; //POM_classname Object_reference_variable
 	MyarDashboardPage myarDashboardPageObj;
 	MyarEditProfile myarEditProfileObj;
 	MyarManageAPI_KeyPage myarManageAPI_KeyPageObj;
@@ -130,7 +130,7 @@ public class MyarRegression extends TestBase {
 
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
-		// Initilize page Objects
+		// Initilize page Objects 
 		myarLoginPageObj = new MyarLoginPage();
 		myarDashboardPageObj = new MyarDashboardPage();
 		myarEditProfileObj = new MyarEditProfile();

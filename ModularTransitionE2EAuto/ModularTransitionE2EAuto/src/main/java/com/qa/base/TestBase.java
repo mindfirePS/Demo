@@ -61,7 +61,7 @@ public class TestBase {
 	public static String browserName1;
 	public static String browserVersion1;
 	private static String propertiesFileName;
-	public static String env;
+	public static String env; // variable that will store the value of environment like myar_dev, myar_stagging from config.properites.
 	public static JSONObject testDataFile;
 	public static JSONObject testDataEnv;
 	public static JSONObject testData;
