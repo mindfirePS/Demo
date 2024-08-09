@@ -25,7 +25,7 @@ import org.testng.Assert;
 
 import com.qa.base.TestBase;
 
-public class TestUtil extends TestBase {
+public class TestUtil extends TestBase {  //child class of TestBase class
 	// Static public variable to use anywhere.
 	public static long PAGE_LOAD_TIMEOUT = 60;
 	public static long IMPLICIT_WAIT = 20;
@@ -36,12 +36,12 @@ public class TestUtil extends TestBase {
 	public static String CurrentTime = dtf.format(now);
 	static JavascriptExecutor js = (JavascriptExecutor) getdriver();
 
-	public void switchToFrame() {
-		getdriver().switchTo().frame("mainpanel");
+	public void switchToFrame() {                     // method for frame switching
+		getdriver().switchTo().frame("mainpanel");	  // driver switching to frame "mainpanel"
 	}
 
-	public static void threadMethod(int n) {
-		try {
+	public static void threadMethod(int n) { 
+		try {										// try catch block for exception handling.
 			Thread.sleep(n);
 		} catch (InterruptedException ie) {
 		}
@@ -165,9 +165,11 @@ public class TestUtil extends TestBase {
 	 */
 	public static void scrollPageToElement(WebElement element) {
 
-		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		js.executeScript("arguments[0].scrollIntoView(true);", element); 
+		// this method is used to scroll to the location of the element.
 	}
 
+	// scrolling to element and clicking using javascript executer
 	public static void scrollPageToElementAndClick(WebElement element, String elemName) {
 		reportLog("Clicking on " + elemName);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
@@ -188,7 +190,7 @@ public class TestUtil extends TestBase {
 		return currTime;
 	}
 
-	public static WebDriverWait setExplicitWait(int seconds) {
+	public static WebDriverWait setExplicitWait(int seconds) { // Expicit Wait
 		wait = new WebDriverWait(getdriver(), Duration.ofMillis(seconds));
 		return wait;
 	}
@@ -200,7 +202,7 @@ public class TestUtil extends TestBase {
 	 * 
 	 */
 
-	public static void closeAllSubTabs() throws InterruptedException {
+	public static void closeAllSubTabs() throws InterruptedException { //method to close all tabs except the tab in which driver is currently present
 
 		reportLog("Closing all sub tabs");
 		defaultWindow = getdriver().getWindowHandle();
@@ -214,7 +216,7 @@ public class TestUtil extends TestBase {
 			// Store the Recruiter window id
 			String childWindow = windowIterator.next();
 			// Here we will compare if parent window is not equal to child window
-			if (!defaultWindow.equals(childWindow)) {
+			if (!defaultWindow.equals(childWindow)) {   // if condition is true then we will switch to child window
 				getdriver().switchTo().window(childWindow);
 				getdriver().close();
 			}
@@ -245,7 +247,7 @@ public class TestUtil extends TestBase {
 		// Highlight the input box
 		highlightElement(element);
 		// Send values to the input box
-		element.sendKeys(value);
+		element.sendKeys(value);		
 		// Log result
 		reportLog("Inputted '" + value + "' text into : " + elemName);
 		return value;
@@ -268,7 +270,7 @@ public class TestUtil extends TestBase {
 	 *
 	 * @return : Result of execution - Pass or fail (with cause)
 	 */
-	public static String clearAndInput(WebElement element, String elemName, String Value) {
+	public static String clearAndInput(WebElement element, String elemName, String Value) { //method with 3 parameters
 		reportLog("Sending Values in : " + elemName);
 		// Wait for the input box to appear on the page
 		waitForElementToLoad(element, elemName);
@@ -309,16 +311,16 @@ public class TestUtil extends TestBase {
 	 */
 	public static Boolean waitForElementToDisappear(final WebElement element, String elementName) {
 		reportLog("Waiting for web element to disappear from the page : " + elementName);
-		Boolean invisbleFlag = wait.until(ExpectedConditions.invisibilityOf(element));
+		Boolean invisbleFlag = wait.until(ExpectedConditions.invisibilityOf(element)); // used explicit wait condition.
 		return invisbleFlag;
 	}
 
 	public static void waitForElementToBeClickable(final WebElement element, String elementName) {
 		reportLog("Waiting for web element to be clickable : " + elementName);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));		// used explicit wait condition.
 	}
 
-	public static ExpectedCondition<Boolean> waitForAjaxCalls() {
+	public static ExpectedCondition<Boolean> waitForAjaxCalls() { // dont know this
 		return new ExpectedCondition<Boolean>() {
 			@Override
 			public Boolean apply(WebDriver driver) {
@@ -447,7 +449,7 @@ public class TestUtil extends TestBase {
 	 */
 	public static void waitForPageToLoad() {
 		for (int i = 0; i < 120; i++) {
-			try {
+			try {								// try catch block for exception handling.
 				Thread.sleep(1000);
 			} catch (InterruptedException ex) {
 				System.out.println("Page has not loaded yet ");
@@ -743,7 +745,7 @@ public class TestUtil extends TestBase {
 	public static void refreshPage() {
 		reportLog("Executing : refreshPage() method");
 		reportLog("Refreshing page");
-		getdriver().navigate().refresh();
+		getdriver().navigate().refresh();		// for refreshing page
 		reportLog("Page successfully refreshed");
 	}
 
@@ -1094,7 +1096,7 @@ public class TestUtil extends TestBase {
 	 * 
 	 * @return Random DOB in MM/DD/YYYY format
 	 */
-	public static String getRandomDOB() {
+	public static String getRandomDOB() {      // not aware
 		GregorianCalendar gc = new GregorianCalendar();
 
 		int year = 1901 + (int) Math.round(Math.random() * (2021 - 1900));
