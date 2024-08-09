@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="myar.pages.MyarLoginPage"/>
+    <fullyQualifiedTypeName name="myar.pages.MyarDashboardPage"/>
+    <fullyQualifiedTypeName name="myar.pages.MyarEditProfile"/>
+    <fullyQualifiedTypeName name="myar.pages.MyarManageAPI_KeyPage"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="com.qa.util.TestUtil"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.dynamic.scaffold.InstrumentedType.Prepareable"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+    <fullyQualifiedTypeName name="com.qa.base.TestBaseMyCorrection"/>
+    <fullyQualifiedTypeName name="com.qa.base.TestBase"/>
+</qualifiedTypeNameHistroy>

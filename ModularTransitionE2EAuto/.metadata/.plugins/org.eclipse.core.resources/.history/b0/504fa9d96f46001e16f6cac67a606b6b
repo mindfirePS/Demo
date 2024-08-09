@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Modular_Regression_Suit">
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.qa.RetryAnalyzer.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Myar Regression Test">
+		<classes>
+			<class name="myar.testcases.MyarRegression">
+				 <!----><methods>
+				 	<exclude name="verifyLoginFunctionalityWithValidCredentials" />
+				 	<exclude name="verifyManageAPI_KeyFunctionality" />
+				 	<exclude name="verifyChangeEmailAddressFunctionality" />
+				 	<exclude name="verifyAddRenameDeleteFolderActionsOfMediaSection" />
+				 	<exclude name="verifyAddRenameDeleteFolderActionsOfProductSection" />
+				 	<exclude name="verifyResetPasswordFunctionality" />
+				 	
+				 	<exclude name="verifyAddingNewSubgroupAdminUserFunctionality" />
+				 	<exclude name="verifyAddingNewUserAdminUserFunctionality" />
+				 	
+				 	<exclude name="verifyChangingRGB_ValuesChangesBackgroundColorOfEditor" />
+				 	<exclude name="verifyChangingHSL_ValuesChangesBackgroundColorOfEditor" />
+				 	
+				 	<exclude name="verifyBilledTargetsForTrustedPartnersDisplayed" />
+				 	<include name="verifyOnExcelImportClickingProductIdAtImportStatusOpensImportedProductInEditor" />
+				 	<include name="" />
+				</methods>  
+			</class>
+		</classes>
+	</test>
+</suite>
