@@ -46,8 +46,12 @@ public class TestUtil extends TestBase {  //child class of TestBase class
 		} catch (InterruptedException ie) {
 		}
 	}
-
-	public static String randomStringGenerator(int length) {
+/**
+ * 
+ * @param length
+ * @return
+ */
+	public static String randomStringGenerator(int length) { 
 		String randomString = RandomStringUtils.randomAlphabetic(length);
 		return randomString;
 	}

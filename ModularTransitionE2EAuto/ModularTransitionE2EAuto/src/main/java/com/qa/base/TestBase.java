@@ -44,18 +44,27 @@ import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 
+
 public class TestBase {
 
 	// A static member is a member of a class that isn't associated with an instance
 	// of a class. Instead, the member belongs to the class itself.
 
-	
+	/**
+	 * Initialisation of webDriver
+	 */
 	public static WebDriver driver; // Initialize webdriver with static variable. This is set to private because I
 									// am not using this anywhere outside this class
-	public static DesiredCapabilities capabilities;
+	public static DesiredCapabilities capabilities; // not aware of desiredcapabilities
 	public static Properties prop; // Public class variable for properties. This is a global variable(public
 									// static).I can use inside TestBase.java class and all other child classes also
+	/**
+	 * To check if/any deprecated methods used
+	 */
 	@SuppressWarnings("deprecation")
+	/** 
+	 * Variable declarations
+	 */
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static String browserName1;
@@ -79,20 +88,30 @@ public class TestBase {
 	public static String suiteXmlName;
 	public static String className;
 	
-	static ChromeOptions options;
+	/**
+	 * Variable for each webDrivers.
+	 */
+	static ChromeOptions options; // variables to manage options of different WebDrivers
 	static EdgeOptions edgeOptions;
 	static FirefoxOptions ffoptions;
-
+	
 	//public variables for second browser initialization
 	public static String defaultWindow2;
 	public static WebDriver driver2;
 	public static EventFiringWebDriver e_driver2;
 	public static WebEventListener eventListener2;
+	/**
+	 * This will be used for soft Assertion.
+	 */
 	//soft assert
 	public static SoftAssert softAssert = new SoftAssert();
 	
 	// this will retrive Jenkins build number for reports folder creation.
 	// will be null for local run and reports folder will instead have timestamp in foldername
+	
+	/**
+	 * This will store the jenkins build number for reports.
+	 */
 	public static String buildNumber = System.getenv("BUILD_NUMBER");
 
 	// private static final String KEY = "environment";
@@ -103,6 +122,10 @@ public class TestBase {
 
 	// Method for adding logs passed from test cases. This is for extentTest HTML
 	// report and log4j log files as well
+	/**
+	 * This method will be usd for logging reports.
+	 * @param message
+	 */
 	public static void reportLog(String message) {
 		log.info(message);
 		Reporter.log(message);
@@ -112,6 +135,10 @@ public class TestBase {
 	// Actions action = new Actions(getdriver());
 
 	// Method to take screenshot at any step you want
+	/**
+	 * this method is to take screenshot at any step.
+	 * @param screenshotPath
+	 */
 	public static void takeScreenshotAtAnyStep(String screenshotPath) {
 		Reporter.log(screenshotPath);
 	}
@@ -122,21 +149,32 @@ public class TestBase {
 
 	// Getter method ThreadLocal variable dr. This is the driver instance, it will
 	// check which thread is calling this for parallel running.
+	/**
+	 * getter method
+	 * @return
+	 */
 	public static WebDriver getdriver() {
 		return dr.get();
 	}
 
 	// Setter method. This will set the webdriver reference driverref
+	/** setter method
+	 * 
+	 * @param driverref
+	 */
 	public static void setDriver(WebDriver driverref) {
 		dr.set(driverref);
 	}
 
 	// For cleanup operation. This will remove any values stored by threadLocal
 	// variable. This will be used in afterclass method of each test.
+	/**
+	 * This method will probably remove values.
+	 */
 	public static void unload() {
 		dr.remove();
 	}
-
+/**
 	// API request failure logging
 	public static void enableNetworkLogging(WebDriver driver){
 		try {
@@ -148,7 +186,7 @@ public class TestBase {
 				Request req = request.getRequest();
 				reportLog(req.getUrl());
 				reportLog(req.getHeaders().toString());
-			});*/
+			});
 			devTools.addListener(Network.responseReceived(),response ->{
 				Response res= response.getResponse();
 				String statusCode = res.getStatus().toString();
@@ -164,8 +202,16 @@ public class TestBase {
 		}
 
 	}
-
+*/
 	// Initialization method
+	/** it returns XML suite name
+	 * 
+	 * @throws MalformedURLException
+	 */
+	
+	/**
+	 * To check if/any deprecated methods used
+	 */
 	@SuppressWarnings("deprecation")
 	public static void initialization() throws MalformedURLException 
 	{
@@ -176,6 +222,9 @@ public class TestBase {
 		{
 			try
 			{
+				/**
+				 * this will basically store the name of the suite.
+				 */
 				suiteXmlName = System.getProperty("xmlSuiteFileName").replaceFirst("src/main/resources/", "").replaceAll(".xml", "");
 				reportLog("Test Suite Name: " + suiteXmlName);
 			}
@@ -299,7 +348,7 @@ public class TestBase {
 		 */
 		remoteValue = System.getProperty("remote") != null ? System.getProperty("remote")
 				: prop.getProperty("remote");
-		saucelabValue = System.getProperty("sauceLab") != null ? System.getProperty("sauceLab")
+	/**	saucelabValue = System.getProperty("sauceLab") != null ? System.getProperty("sauceLab")
 				: prop.getProperty("sauceLab");
 		
 		if(remoteValue.equals("true"))  {
@@ -363,7 +412,7 @@ public class TestBase {
                 options.addArguments("--remote-allow-origins=*");
                 driver = new RemoteWebDriver(new URL(seleniumGridURL), options);
                 ((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
-                enableNetworkLogging(driver);
+                //enableNetworkLogging(driver);
             } else if (browserName.trim().equalsIgnoreCase("firefox")) {
                 FirefoxOptions options = new FirefoxOptions();
                 options.addPreference("webdriver.accept.untrusted.certs", true);
@@ -381,53 +430,64 @@ public class TestBase {
 		  }
 		}
 		else {
-			if (browserName.trim().equalsIgnoreCase("chrome")) {
-	            ChromeOptions options = new ChromeOptions();
-	            options.addArguments("--ignore-certificate-errors");
-	          //Added below to handle ExceptionInitializationError for Ch versions > 110
-	            options.addArguments("--remote-allow-origins=*");
-	            driver = new ChromeDriver(options);
-	            enableNetworkLogging(driver);
-	        } else if (browserName.trim().equalsIgnoreCase("firefox")) {
-	            FirefoxOptions options = new FirefoxOptions();
-	            options.addPreference("webdriver.accept.untrusted.certs", true);
-	            options.setCapability("marionette", true);
-	            driver = new FirefoxDriver(options);
-	        } else if (browserName.trim().equalsIgnoreCase("edge")) {
-	            EdgeOptions options = new EdgeOptions();
-	            options.setCapability("acceptInsecureCerts", true);
-	            driver = new EdgeDriver(options);
+		*/	if (browserName.trim().equalsIgnoreCase("chrome")) 
+		{
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			//	            options.addArguments("--ignore-certificate-errors");
+			//Added below to handle ExceptionInitializationError for Ch versions > 110
+			options.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(options);
+			//	            enableNetworkLogging(driver);
+		} 
+
+		else if (browserName.trim().equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			// Set preferences to accept untrusted certificates
+			options.setAcceptInsecureCerts(true);
+			//	            options.setHeadless(true);
+			//	            options.addPreference("webdriver.accept.untrusted.certs", true);
+			options.setCapability("marionette", true);
+			driver = new FirefoxDriver(options);
+		} else if (browserName.trim().equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			//	            options.setCapability("acceptInsecureCerts", true);
+			driver = new EdgeDriver(options);
 		}
-		}
+//	}
 
-		setDriver(driver);
+	setDriver(driver);
 
-		// To get Browser details:
-		Capabilities browserCap = ((RemoteWebDriver) getdriver()).getCapabilities();
-		browserName1 = browserCap.getBrowserName();
-		browserVersion1 = browserCap.getBrowserVersion();
-		reportLog(browserName1 + "   " + browserVersion1);
+	// To get Browser details:
+	Capabilities browserCap = ((RemoteWebDriver) getdriver()).getCapabilities();
+	browserName1 = browserCap.getBrowserName();
+	browserVersion1 = browserCap.getBrowserVersion();
+	reportLog(browserName1 + "   " + browserVersion1);
 
-		// To get Application environment currently running
+	// To get Application environment currently running
 
-		// Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter(KEY);
+	// Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter(KEY);
 
-		// Create EventFiringWebDriver class object
-		e_driver = new EventFiringWebDriver(getdriver());
-		// Now create object of EventListerHandler to register it with
-		// EventFiringWebDriver
-		eventListener = new WebEventListener();
-		// Register the eventListener class object with event firing webdriver object.
-		e_driver.register(eventListener);
-		// Assign this to the main driver
-		// driver = e_driver;
-		setDriver(e_driver);
+	// Create EventFiringWebDriver class object
+	e_driver = new EventFiringWebDriver(getdriver());
+	// Now create object of EventListerHandler to register it with
+	// EventFiringWebDriver
+	eventListener = new WebEventListener();
+	// Register the eventListener class object with event firing webdriver object.
+	e_driver.register(eventListener);
+	// Assign this to the main driver
+	// driver = e_driver;
+	setDriver(e_driver);
 
-		getdriver().manage().window().maximize();
-		getdriver().manage().deleteAllCookies();
-		getdriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.PAGE_LOAD_TIMEOUT));
-		getdriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.IMPLICIT_WAIT));
-		defaultWindow = getdriver().getWindowHandle();
-	}
+	getdriver().manage().window().maximize();
+	getdriver().manage().deleteAllCookies();
+	getdriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.PAGE_LOAD_TIMEOUT));
+	getdriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.IMPLICIT_WAIT));
+	defaultWindow = getdriver().getWindowHandle();
+}
 
 }
+		

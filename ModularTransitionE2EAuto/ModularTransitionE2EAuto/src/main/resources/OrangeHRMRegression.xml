@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Myar_Regression_Suit">
+<suite name="OrangeHRM_Regression_Suit">
 
 	<groups>
 		<run>
@@ -14,16 +14,16 @@
 		<listener class-name="com.qa.RetryAnalyzer.AnnotationTransformer" />
 	</listeners>
 
-	<test name="Myar Regression Test">
+	<test name="OrangeHRM Regression Test">
 		<classes>
-			<class name="myar.testcases.MyarRegression">
+			<class name="orangeHRM.testcases.OrangeHRMRegression">
 				<!---->
 				<methods>
-					<!-- 
+					 
 					
 					 
-					<include name="verify_product_activation_flow_from_product_list" />
-					-->	
+					<include name="verifyLogin" />
+						
 					
 
 				</methods>

@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="myar.testcases.MyarRegression">
+      <class name="orangeHRM.testcases.OrangeHRMRegression">
         <methods>
-          <include name="intialize"/>
-          <include name="verifyLoginFunctionalityWithValidCredentials"/>
-          <include name="cleanup"/>
           <include name="setup"/>
+          <include name="verifyLogin"/>
           <include name="takeScreenshotInCaseOfFailure"/>
+          <include name="intialize"/>
         </methods>
-      </class> <!-- myar.testcases.MyarRegression -->
+      </class> <!-- orangeHRM.testcases.OrangeHRMRegression -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,22 @@
+{
+	
+	"OrangeHRM": 
+	{
+		
+		"firefox":
+		{
+			
+			"Username" : "Admin",
+			"Password" : "admin123"
+		},	
+		"chrome":
+		 {
+			
+			
+			"Username" : "Admin",
+			"Password" : "admin123"						
+		 }
+		 
+	}
+	
+}
