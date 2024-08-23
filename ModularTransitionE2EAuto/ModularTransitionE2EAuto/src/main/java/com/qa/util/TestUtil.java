@@ -383,6 +383,8 @@ public class TestUtil extends TestBase {  //child class of TestBase class
 	 *
 	 * @return : Result of execution - Pass or fail (with cause)
 	 */
+	
+	//clicking element with JS
 	public static String clickElementwithJS(WebElement element, String elemName) {
 		reportLog("Clicking on : " + elemName);
 		// Wait for link to appear on the page
@@ -618,8 +620,8 @@ public class TestUtil extends TestBase {  //child class of TestBase class
 	 * public static String retrieveText(WebElement element, String elemName) method
 	 * specification :-
 	 *
-	 * 1) Return retrieved text from webpage 2)
-	 * getdriver().findElement(locator).getText() -> Retrieves text from the web
+	 * 1) Return retrieved text from webpage 
+	 * 2) getdriver().findElement(locator).getText() -> Retrieves text from the web
 	 * element targeted by specified locator
 	 *
 	 * @param : Locator for the web element, Name of the web element
@@ -644,8 +646,8 @@ public class TestUtil extends TestBase {  //child class of TestBase class
 	 * public static String retrieveAttributeValue(WebElement element,String
 	 * value,String elemName) method specification :-
 	 *
-	 * 1) Return retrieved HTML attribute value from webpage 2)
-	 * getdriver().findElement(locator).getAttribute(value) -> Retrieves attribute
+	 * 1) Return retrieved HTML attribute value from webpage 
+	 * 2) getdriver().findElement(locator).getAttribute(value) -> Retrieves attribute
 	 * (present under a web element) value
 	 *
 	 * @param : Locator for the web element, Attribute name, Name of the web element
@@ -751,6 +753,16 @@ public class TestUtil extends TestBase {  //child class of TestBase class
 		reportLog("Refreshing page");
 		getdriver().navigate().refresh();		// for refreshing page
 		reportLog("Page successfully refreshed");
+	}
+	
+	public static void navigateBack() 
+	{
+		reportLog("Executing : navigateBack() method");
+		reportLog("Navigating Back");
+		threadMethod(5000);
+		getdriver().navigate().back();;
+		waitForPageToLoad();
+		reportLog("Navigated back");
 	}
 
 	/**

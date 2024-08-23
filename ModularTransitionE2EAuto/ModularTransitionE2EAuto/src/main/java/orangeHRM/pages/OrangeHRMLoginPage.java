@@ -25,8 +25,14 @@ public class OrangeHRMLoginPage extends TestBase
 	@FindBy(name ="password")
 	WebElement Password;
 	
+	@FindBy(xpath ="//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
+	WebElement ForgotPassword;
+	
 	@FindBy(className="orangehrm-login-branding")
 	WebElement Logo;
+	
+	@FindBy(xpath = "//a[@href='http://www.orangehrm.com']")
+	WebElement OrangeHRMLink;
 	
 	String loginUrl = prop.getProperty(env + "URL");
 	
@@ -45,7 +51,21 @@ public class OrangeHRMLoginPage extends TestBase
 		clickElement(LoginButton, "Login Button");
 	}
 	
+//	public void ClickonOrangeHRMUrl()
+//	{
+//		clickElement(OrangeHRMLink, "OrangeHRM bottomlink");
+//	}
 	
+	public void clickOnForgotPassword()
+	{
+		clickElement(ForgotPassword, "Forgot Password?");
+	}
+	
+	public void checkfooterURLisClickable()
+	{
+		waitForElementToBeClickable(OrangeHRMLink,"FooterURL");
+		driver.close();
+	}
 	public void login(String username, String password)
 	{
 		navigateToLoginURL();
@@ -54,10 +74,17 @@ public class OrangeHRMLoginPage extends TestBase
 		Clickonlogin();
 	}
 	
+	public void ForgotPassword()
+	{
+		clickOnForgotPassword();
+	}
+	
+	
 	public boolean verifyLogoIsPresent()
 	{
 		 return isElementPresent(Logo, "orangeHRM Logo");
 	}
+	
 	
 	// Navigate to login page
 		public void navigateToLoginURL() {

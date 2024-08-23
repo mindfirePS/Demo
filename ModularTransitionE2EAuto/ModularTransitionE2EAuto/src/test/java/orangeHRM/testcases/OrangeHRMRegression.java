@@ -1,6 +1,6 @@
 package orangeHRM.testcases;
 
-import static com.qa.util.TestUtil.getScreenshot;
+import static com.qa.util.TestUtil.*;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -16,13 +16,19 @@ import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
 import com.qa.util.JsonReader;
+import com.qa.util.TestUtil;
 
+import orangeHRM.pages.OrangeHRMDashboardPage;
 import orangeHRM.pages.OrangeHRMLoginPage;
+import orangeHRM.pages.OrangeHRMResetPage;
 
 public class OrangeHRMRegression extends TestBase
 {
 	// Declare all pages to be used
 	OrangeHRMLoginPage OrangeHRMLoginPageObj;
+	OrangeHRMDashboardPage OrangeHRMDashboardPageObj;
+	OrangeHRMResetPage OrangeHRMResetPageObj;
+
 	
 	// declare testdata
 	String username;
@@ -48,6 +54,8 @@ public class OrangeHRMRegression extends TestBase
 		// Initilize page Objects 
 		
 		OrangeHRMLoginPageObj = new OrangeHRMLoginPage();
+		OrangeHRMDashboardPageObj = new OrangeHRMDashboardPage();
+		OrangeHRMResetPageObj = new OrangeHRMResetPage();
 		
 		// initialize testdata variables
 		username = testData.getString("Username");
@@ -84,6 +92,9 @@ public class OrangeHRMRegression extends TestBase
 	public void verifyLogin()
 	{
 		OrangeHRMLoginPageObj.login(username,password);
+		threadMethod(5000);
+		OrangeHRMDashboardPageObj.logout();
+		
 	}
 	
 	@Test
@@ -93,10 +104,25 @@ public class OrangeHRMRegression extends TestBase
 		assertTrue(OrangeHRMLoginPageObj.verifyLogoIsPresent());
 	}
 	
-	@Test(groups="name")
-	public void verifyName()
-	{
-		System.out.println("name");
+	@Test
+	public void verifyForgotPassword()
+	{	
+		OrangeHRMLoginPageObj.navigateToLoginURL();
+		OrangeHRMLoginPageObj.clickOnForgotPassword();
+		assertEquals(OrangeHRMResetPageObj.getResetButtonText(),"Reset Password");
+		OrangeHRMResetPageObj.getBackToLoginPage();
 	}
 	
+	@Test
+	public void verifyOrangeHRMfooterUrl()
+	{
+		OrangeHRMLoginPageObj.navigateToLoginURL();
+		OrangeHRMLoginPageObj.checkfooterURLisClickable();
+	}
+//	@Test(groups="name")
+//	public void verifyName()
+//	{
+//		System.out.println("name");
+//	}
 }
+

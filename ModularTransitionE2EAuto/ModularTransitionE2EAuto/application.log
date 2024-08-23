@@ -1,18 +1,13 @@
-08-20-2024 17:50:58 TestBase.java [INFO ] - Test Suite Name: OrangeHRMRegression
-08-20-2024 17:50:58 TestBase.java [INFO ] - browser: firefox
-08-20-2024 17:50:58 TestBase.java [INFO ] - environment: OrangeHRM
-08-20-2024 17:51:01 TestBase.java [INFO ] - firefox   124.0.2
-08-20-2024 17:51:02 TestBase.java [INFO ] - Cleared browser cookies
-08-20-2024 17:51:02 TestBase.java [INFO ] - Login URL: https://opensource-demo.orangehrmlive.com
-08-20-2024 17:51:05 TestBase.java [INFO ] - Sending Values in : username
-08-20-2024 17:51:05 TestBase.java [INFO ] - Waiting for web element to load on the page : username
-08-20-2024 17:51:06 TestBase.java [INFO ] - Cleared : username
-08-20-2024 17:51:06 TestBase.java [INFO ] - Inputted 'Admin' text into : username
-08-20-2024 17:51:06 TestBase.java [INFO ] - Sending Values in : password
-08-20-2024 17:51:06 TestBase.java [INFO ] - Waiting for web element to load on the page : password
-08-20-2024 17:51:06 TestBase.java [INFO ] - Cleared : password
-08-20-2024 17:51:06 TestBase.java [INFO ] - Inputted 'admin123' text into : password
-08-20-2024 17:51:06 TestBase.java [INFO ] - Clicking on : Login Button
-08-20-2024 17:51:06 TestBase.java [INFO ] - Waiting for web element to load on the page : Login Button
-08-20-2024 17:51:07 TestBase.java [INFO ] - Clicked on : Login Button
-08-20-2024 17:51:07 TestBase.java [INFO ] - TEST PASSED: verifyLogin
+08-23-2024 17:43:01 TestBase.java [INFO ] - Test Suite Name: OrangeHRMRegression
+08-23-2024 17:43:01 TestBase.java [INFO ] - browser: chrome
+08-23-2024 17:43:01 TestBase.java [INFO ] - environment: OrangeHRM
+08-23-2024 17:43:04 TestBase.java [INFO ] - chrome   127.0.6533.120
+08-23-2024 17:43:04 TestBase.java [INFO ] - Cleared browser cookies
+08-23-2024 17:43:04 TestBase.java [INFO ] - Login URL: https://opensource-demo.orangehrmlive.com
+08-23-2024 17:43:13 TestBase.java [INFO ] - Clicking on : Forgot Password?
+08-23-2024 17:43:13 TestBase.java [INFO ] - Waiting for web element to load on the page : Forgot Password?
+08-23-2024 17:43:15 TestBase.java [INFO ] - Clicked on : Forgot Password?
+08-23-2024 17:43:15 TestBase.java [INFO ] - Retrieving Text from : Reset Button
+08-23-2024 17:43:15 TestBase.java [INFO ] - Waiting for web element to load on the page : Reset Button
+08-23-2024 17:43:15 TestBase.java [INFO ] - Retrieved text : Reset Password
+08-23-2024 17:43:15 TestBase.java [INFO ] - TEST PASSED: verifyForgotPassword
